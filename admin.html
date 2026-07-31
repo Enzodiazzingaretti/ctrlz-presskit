@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>CTRL.Z — Consola</title>
+  <link rel="icon" type="image/png" href="logo-white.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css?v=1" />
+</head>
+<body>
+
+  <!-- ══ LOGIN ══ -->
+  <div class="gate" id="gate">
+    <div class="gate__card">
+      <img src="logo-white.png" alt="CTRL.Z" class="gate__logo" />
+      <p class="gate__kicker">Consola</p>
+
+      <!-- Modo contraseña (producción, con las env vars cargadas) -->
+      <form class="gate__form" id="pwForm" hidden>
+        <label class="label" for="pw">Contraseña</label>
+        <input type="password" id="pw" autocomplete="current-password" />
+        <button class="btn btn--solid" type="submit">Entrar</button>
+        <p class="hint">La sesión dura 12 horas en este navegador.</p>
+      </form>
+
+      <!-- Modo token (entornos sin API: preview local, etc.) -->
+      <form class="gate__form" id="tokenForm" hidden>
+        <label class="label" for="tk">Fine-grained token de GitHub</label>
+        <input type="password" id="tk" placeholder="github_pat_..." autocomplete="off" />
+        <button class="btn btn--solid" type="submit">Entrar</button>
+        <p class="hint">Necesita permiso <b>Contents: Read and write</b> sobre este repositorio.</p>
+      </form>
+
+      <p class="status" id="gateStatus"></p>
+    </div>
+  </div>
+
+  <!-- ══ CONSOLA ══ -->
+  <div class="app" id="app" hidden>
+
+    <header class="top">
+      <div class="top__brand">
+        <img src="logo-white.png" alt="CTRL.Z" />
+        <span class="top__tag">Consola</span>
+      </div>
+      <div class="top__right">
+        <span class="flag" id="dirtyFlag"><i></i><span id="dirtyText">Todo publicado</span></span>
+        <a class="btn btn--ghost" href="/" target="_blank" rel="noopener">Ver sitio ↗</a>
+        <button class="btn btn--solid" id="publish">Publicar cambios</button>
+        <button class="btn btn--ghost" id="logout">Salir</button>
+      </div>
+    </header>
+
+    <p class="status status--bar" id="saveStatus"></p>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab is-active" data-tab="artista">Artista</button>
+      <button class="tab" data-tab="textos">Textos</button>
+      <button class="tab" data-tab="listas">Listas</button>
+      <button class="tab" data-tab="imagenes">Imágenes</button>
+      <button class="tab" data-tab="secciones">Secciones</button>
+    </nav>
+
+    <main class="panes">
+
+      <!-- ── ARTISTA ── -->
+      <section class="pane is-active" data-pane="artista">
+        <h2 class="h">Datos de la artista</h2>
+        <p class="p">Esto alimenta el bloque de booking, las redes y los botones al press kit.</p>
+        <div id="artistFields"></div>
+      </section>
+
+      <!-- ── TEXTOS ── -->
+      <section class="pane" data-pane="textos">
+        <h2 class="h">Textos del sitio</h2>
+        <p class="p">Envolvé una palabra entre asteriscos para destacarla: <code>*así*</code>.</p>
+        <div id="textFields"></div>
+      </section>
+
+      <!-- ── LISTAS ── -->
+      <section class="pane" data-pane="listas">
+        <h2 class="h">Listas</h2>
+        <p class="p">Géneros del ticker, datos destacados, escenarios, rider y hospitalidad.</p>
+
+        <details class="grp" open>
+          <summary>Géneros <b class="count" id="cGenres"></b></summary>
+          <div class="rows" id="genres"></div>
+          <button class="btn btn--ghost btn--sm" data-add="genres">+ Agregar género</button>
+        </details>
+
+        <details class="grp">
+          <summary>Datos destacados <b class="count" id="cFacts"></b></summary>
+          <div class="rows" id="facts"></div>
+          <button class="btn btn--ghost btn--sm" data-add="facts">+ Agregar dato</button>
+        </details>
+
+        <details class="grp">
+          <summary>Compartió escenario <b class="count" id="cShared"></b></summary>
+          <div class="rows" id="shared"></div>
+          <button class="btn btn--ghost btn--sm" data-add="shared">+ Agregar artista</button>
+        </details>
+
+        <details class="grp">
+          <summary>Escenarios <b class="count" id="cStages"></b></summary>
+          <div class="rows" id="stages"></div>
+          <button class="btn btn--ghost btn--sm" data-add="stages">+ Agregar escenario</button>
+        </details>
+
+        <details class="grp">
+          <summary>Opciones de cabina <b class="count" id="cOptions"></b></summary>
+          <div class="rows" id="options"></div>
+          <button class="btn btn--ghost btn--sm" data-add="options">+ Agregar opción</button>
+        </details>
+
+        <details class="grp">
+          <summary>Requerimientos técnicos <b class="count" id="cReqs"></b></summary>
+          <div class="rows" id="reqs"></div>
+          <button class="btn btn--ghost btn--sm" data-add="reqs">+ Agregar requerimiento</button>
+        </details>
+
+        <details class="grp">
+          <summary>Hospitalidad <b class="count" id="cHosp"></b></summary>
+          <div class="rows" id="hosp"></div>
+          <button class="btn btn--ghost btn--sm" data-add="hosp">+ Agregar ítem</button>
+        </details>
+      </section>
+
+      <!-- ── IMÁGENES ── -->
+      <section class="pane" data-pane="imagenes">
+        <h2 class="h">Imágenes</h2>
+        <p class="p">Se convierten a WebP en el navegador antes de subir. Máximo 2&nbsp;MB por archivo.</p>
+        <div class="slots" id="slots"></div>
+
+        <h3 class="h h--sm">Galería de prensa <b class="count" id="cGallery"></b></h3>
+        <div class="rows" id="gallery"></div>
+        <label class="btn btn--ghost btn--sm">
+          + Agregar foto
+          <input type="file" accept="image/*" id="galleryAdd" hidden />
+        </label>
+      </section>
+
+      <!-- ── SECCIONES ── -->
+      <section class="pane" data-pane="secciones">
+        <h2 class="h">Secciones visibles</h2>
+        <p class="p">Apagar una sección la oculta del sitio y saca su enlace del menú.</p>
+        <div class="switches" id="switches"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="admin.js?v=1" defer></script>
+</body>
+</html>

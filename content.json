@@ -1,0 +1,154 @@
+{
+  "artist": {
+    "name": "CTRL.Z",
+    "realName": "Brenda Hetcer",
+    "location": "Mendoza, Argentina",
+    "email": "hetcerbrenda@gmail.com",
+    "phones": {
+      "manager": "+54 9 380 491 6279",
+      "dj": "+54 9 261 645 9960"
+    },
+    "socials": {
+      "instagram": { "url": "https://www.instagram.com/ctrlz______", "handle": "@ctrlz______" },
+      "youtube": { "url": "https://youtube.com/@ctrl.z_19", "handle": "@ctrl.z_19" },
+      "soundcloud": { "url": "https://soundcloud.com/user-504530231", "handle": "Ctrl.z_" },
+      "spotify": { "url": "https://open.spotify.com/user/21vjcevptrynwtqnnz2lpvcdq", "handle": "Ctrlz / Brenda Hetcer" }
+    },
+    "pressKit": "https://drive.google.com/drive/folders/1Vel5XhcDaeey4OGdyyss4_2QcvGRiJR_"
+  },
+  "sections": {
+    "bio": true,
+    "shared": true,
+    "stages": true,
+    "shots": true,
+    "rider": true,
+    "hosp": true,
+    "booking": true
+  },
+  "cover": {
+    "kicker": "Press Kit",
+    "meta": [
+      "Mendoza · Argentina",
+      "Música urbana",
+      "Desde 2017"
+    ]
+  },
+  "genres": [
+    "Reggaetón",
+    "RKT",
+    "Cumbia",
+    "Trap",
+    "Pop",
+    "Perreo",
+    "Ritmos latinos"
+  ],
+  "bio": {
+    "title": "Biografía",
+    "caption": "Brenda Hetcer aka Ctrl.z",
+    "lead": "Brenda Hetcer, aka Ctrl.z, es una DJ mendocina que viene marcando presencia en la escena urbana desde 2017. Con un estilo enérgico y versátil, fusiona reggaetón, RKT, cumbia, pop, trap y otros ritmos latinos que hacen vibrar cualquier pista.",
+    "paras": [
+      "Su carrera profesional comenzó ese mismo año en *El Club del Sodeado*. Desde entonces llevó su propuesta a distintos escenarios, siendo partícipe de eventos multitudinarios en su provincia como ChapaFest, WasabiFest, Fronteo y Rebel, destacándose por su capacidad para leer al público y crear sets explosivos.",
+      "Su talento la llevó a musicalizar en diversas provincias argentinas, pisando fuerte en San Juan, San Luis y Buenos Aires. Con cada show, Ctrl.z reafirma su lugar en la escena urbana, consolidándose como una referente del sonido actual que nace desde el interior del país."
+    ],
+    "quote": "No solo pone música: crea experiencias que conectan."
+  },
+  "facts": [
+    { "value": "2017", "label": "Desde" },
+    { "value": "9+", "label": "Años en escena" },
+    { "value": "8+", "label": "Ciudades" },
+    { "value": "18+", "label": "Escenarios" }
+  ],
+  "shared": {
+    "label": "Compartió escenario · Open show",
+    "items": [
+      { "name": "Duki", "note": "Modo Diablo · 2018" },
+      { "name": "Cazzu", "note": "" },
+      { "name": "Ke Personaje", "note": "" },
+      { "name": "El Peipper", "note": "" },
+      { "name": "Doble P", "note": "" },
+      { "name": "Kaleb Di Masi", "note": "" },
+      { "name": "Papi Champ", "note": "" }
+    ]
+  },
+  "stages": {
+    "title": "Escenarios",
+    "sub": "Clubes, festivales y eventos donde se presentó.",
+    "items": [
+      { "name": "El Club del Sodeado", "city": "Mendoza" },
+      { "name": "ChapaFest", "city": "Mendoza" },
+      { "name": "WasabiFest", "city": "Mendoza" },
+      { "name": "Fronteo", "city": "Mendoza" },
+      { "name": "Rebel", "city": "Mendoza" },
+      { "name": "Black Jagger", "city": "Mendoza" },
+      { "name": "El Roble Wake Complex", "city": "Mendoza" },
+      { "name": "Wabi", "city": "Mendoza" },
+      { "name": "Runner", "city": "Mendoza" },
+      { "name": "Lux", "city": "La Paz" },
+      { "name": "Cramer", "city": "La Paz" },
+      { "name": "Fiesta Brutal", "city": "San Rafael" },
+      { "name": "Chapa", "city": "San Rafael" },
+      { "name": "Comuna Club", "city": "San Luis" },
+      { "name": "Sky Club", "city": "San Luis" },
+      { "name": "La Dominga", "city": "San Juan" },
+      { "name": "Orgusho", "city": "Buenos Aires" },
+      { "name": "Gárgolas", "city": "Buenos Aires" }
+    ],
+    "note": "También en eventos municipales como *Rivadavia Joven* · *Primavera* (La Paz) y la fiesta del día del estudiante en *Santa Rosa*."
+  },
+  "shots": {
+    "title": "Press Photos",
+    "sub": "Tocá una foto para verla en grande."
+  },
+  "rider": {
+    "title": "Rider Técnico",
+    "sub": "Dos opciones de cabina. Cualquiera de las dos funciona.",
+    "options": [
+      { "tag": "Opción 1", "title": "Controlador", "detail": "Pioneer *DDJ-SR* · *SR2* · *800*" },
+      { "tag": "Opción 2", "title": "Cabina completa", "detail": "*XDJ-RX3* · *CDJ-2000 NXS* + mixer *Pioneer DJM-900* / *Xone 96* / *V10*" }
+    ],
+    "reqsTitle": "Requerimientos técnicos",
+    "reqs": [
+      "Cabina con *2 cables RCA* · PLUG · CANON a CANON.",
+      "Zapatilla eléctrica con diferentes tipos de toma corriente.",
+      "Musicalización del *warm up* acorde al horario y a los temas a reproducir. Por favor ponerse en contacto con la artista para coordinar horarios y lista de temas.",
+      "Retornos para mejor pre-escucha a la hora de la mezcla, de preferencia *2 monitores* (uno por lado)."
+    ]
+  },
+  "hosp": {
+    "title": "Hospitalidad",
+    "items": [
+      "Boletos ida y vuelta para la artista, en lo posible con un acompañante.",
+      "Habitación de hotel igual o superior a *3 estrellas* · Airbnb.",
+      "Traslado desde aeropuerto o terminal al club, y vuelta.",
+      "Bebidas sin costo para consumo de la artista: *1 combo internacional* de preferencia y *3 aguas*.",
+      "*5 ingresos libres* al evento.",
+      "Cena pre o post show."
+    ]
+  },
+  "booking": {
+    "title": "Booking & MGMT",
+    "sub": "Disponible para contratación en todo el país."
+  },
+  "images": {
+    "cover": "hero-bg.webp",
+    "bio": "bio-photo.webp",
+    "shared": "live-photo.webp",
+    "stages": "crowd.webp",
+    "hosp": "rider-bg.webp",
+    "riderDiagram": "rider-diagram.webp",
+    "booking": "portrait.webp"
+  },
+  "gallery": [
+    { "src": "press/press-01.webp", "alt": "CTRL.Z en vivo 01" },
+    { "src": "press/press-02.webp", "alt": "CTRL.Z en vivo 02" },
+    { "src": "press/press-03.webp", "alt": "CTRL.Z en vivo 03" },
+    { "src": "press/press-04.webp", "alt": "CTRL.Z en vivo 04" },
+    { "src": "press/press-05.webp", "alt": "CTRL.Z en vivo 05" },
+    { "src": "press/press-06.webp", "alt": "CTRL.Z en vivo 06" },
+    { "src": "press/press-07.webp", "alt": "CTRL.Z en vivo 07" },
+    { "src": "press/press-08.webp", "alt": "CTRL.Z en vivo 08" },
+    { "src": "press/press-09.webp", "alt": "CTRL.Z en vivo 09" },
+    { "src": "press/press-10.webp", "alt": "CTRL.Z retrato" },
+    { "src": "booth.webp", "alt": "CTRL.Z desde la cabina frente al público" }
+  ]
+}
